@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initia l-scale=1.0" />
+    <title>Belajar JS</title>
+
+    <style>
+      #nama {
+        font-size: 30px;
+        color: cadetblue;
+      }
+
+      h4 {
+        font-size: 2rem;
+        color: chartreuse;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <h4>Nama:</h4>
+    <p id="nama"></p>
+
+    <script>
+      // global
+      let nama = 'Joko spesialis kulit';
+      let ortu; // undefined
+      let sudahBayar = 1;
+      let belumBayar = 0;
+
+      // objek dokter
+      const dokter = {
+        nama: 'Susilo',
+        spesialis: 'Kulit',
+        ttl: '02-10-2000',
+        statusPegawai: true,
+        umur: 1000,
+        gelarDepan: 'Dr.',
+        gelarBelakang: 'Sp.Kulit',
+      };
+
+      if (belumBayar) {
+        document.getElementById('nama').innerHTML = 'Oke, barang sedang dikirim';
+      } else {
+        document.getElementById('nama').innerHTML = 'Tolong kamu bayar dulu ya!';
+      }
+
+      // fungsi/method
+      //   function panggilNama(gelarDepan, nama, gelarBelakang) {
+      //     // lokal
+      //     let jabatan = gelarDepan + passingNama + gelarBelakang;
+
+      //     return jabatan;
+      //   }
+
+      // output (DOM)
+      //   document.getElementById('nama').innerHTML = panggilNama(dokter.gelarDepan, dokter.nama, dokter.gelarBelakang);
+
+      //   if (dokter.statusPegawai) {
+      //     document.getElementById('nama').innerHTML = 'Dokter ini masih aktif!';
+      //   } else {
+      //     document.getElementById('nama').innerHTML = 'Dokter udah ga kerja cui!';
+      //   }
+      //   alert(nama);
+      //   console.log(nama);
+    </script>
+  </body>
+</html>

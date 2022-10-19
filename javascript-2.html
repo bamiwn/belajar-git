@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript 2</title>
+  </head>
+  <body>
+    <h1>OUTPUT</h1>
+    <p id="output"></p>
+
+    <script>
+      let angka = 123; // number: integer
+      let angka2 = '123'; // string
+
+      let belumLogin = false;
+
+      const Guru = {
+        nip: 78417814728147,
+        nama: 'Paijo',
+        ttl: '01-04-1920',
+        status: true,
+        beratBadan: 55.4,
+      };
+
+      belumLogin = true;
+
+      // angka & angka2 bakalan dicek apakah
+      // value: sama AND
+      // tipe data: sama juga
+      //   if (angka === angka2) {
+      //     document.getElementById('output').innerHTML = 'sama';
+      //   } else {
+      //     document.getElementById('output').innerHTML = 'tidak sama';
+      //   }
+
+      //   if (angka != angka2) {
+      //     document.getElementById('output').innerHTML = 'sama';
+      //   } else {
+      //     document.getElementById('output').innerHTML = 'tidak sama';
+      //   }
+
+      // if (angka !== angka2) {
+      //     document.getElementById('output').innerHTML = 'sama';
+      //   } else {
+      //     document.getElementById('output').innerHTML = 'tidak sama';
+      //   }
+
+      //   while (angka < 130) {
+      //     document.getElementById('output').innerHTML = angka;
+      //     angka + 1;
+      //   }
+
+      //   if (!angka) {
+      //     document.getElementById('output').innerHTML = 'angka ada isinya';
+      //   } else {
+      //     document.getElementById('output').innerHTML = 'angka ga ada isinya';
+      //   }
+
+      //   if (Guru.nip || Guru.nama) {
+      //     document.getElementById('output').innerHTML = Guru.nama + ' Aktif';
+      //   } else {
+      //     document.getElementById('output').innerHTML = Guru.nama + ' Ga Aktif';
+      //   }
+
+      // perkondisian bersarang
+      let inputUser = 2;
+      //   if (inputUser) {
+      //     document.getElementById('output').innerHTML = 'anda dapat mobil';
+      //   } else if (Guru.status) {
+      //     document.getElementById('output').innerHTML = Guru.nama + ' Guru punya Status';
+      //   } else {
+      //     document.getElementById('output').innerHTML = 'Ga Aktif';
+      //   }
+
+      // ternary
+      //   inputUser ? (document.getElementById('output').innerHTML = 'dapat mobil') : (document.getElementById('output').innerHTML = 'gadapat apa apa');
+
+      //   let inputUser = 80;
+
+      //   switch (inputUser) {
+      //     case 80:
+      //       document.getElementById('output').innerHTML = 'anda dapat mobil';
+      //       break;
+      //     case 2:
+      //       document.getElementById('output').innerHTML = 'perintah2';
+      //       break;
+      //     default:
+      //       document.getElementById('output').innerHTML = 'Tidak ada yang cocok';
+      //       break;
+      //   }
+
+      //   var bilangan = 0;
+      //   while (bilangan < 5) {
+      //     document.write('JavaScript ' + bilangan + '<br>');
+      //     bilangan++;
+      //   }
+
+      //   for (let bilangan = 0; bilangan < 5; bilangan++) {
+      //     document.write('JavaScript ' + bilangan + '<br>');
+      //   }
+
+      //   function cetak(nilai, batas, ...) {
+      //     for (nilai; nilai < 10; nilai++) {
+      //       if (nilai == undefined) {
+      //         nilai = 'kosong';
+      //       }
+      //       document.write('JavaScript ' + nilai + '<br>');
+      //     }
+      //   }
+
+      let text = '';
+      const Produk = [];
+      fruits.forEach(myFunction);
+
+      document.getElementById('output').innerHTML = text;
+
+      function myFunction(item, index) {
+        text += index + ': ' + item + '<br>';
+      }
+
+      //   document.getElementById('output').innerHTML = 10 % 10;
+    </script>
+  </body>
+</html>

@@ -5,14 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style></style>
+    <style>
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        background-color: chartreuse;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .content {
+        flex: 60%;
+        height: 200px;
+        background-color: blueviolet;
+      }
+
+      .sidebar {
+        height: 200px;
+        flex: 40%;
+        background-color: crimson;
+      }
+
+      footer {
+        height: 50px;
+        background-color: aqua;
+      }
+
+      @media (min-width: 768px) {
+        .main {
+          flex-direction: row;
+        }
+      }
+    </style>
   </head>
-  <body>
-    <header></header>
-    <div class="container">
-      <div class="sidebar"></div>
-      <div class="content"></div>
+  <body class="container">
+    <header>
+      <h1>HEADER</h1>
+    </header>
+    <div class="main">
+      <div class="content">CONTENT</div>
+      <div class="sidebar">SIDEBAR</div>
     </div>
-    <footer></footer>
+    <footer>FOOTER</footer>
   </body>
 </html>
